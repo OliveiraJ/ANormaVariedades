@@ -1,28 +1,18 @@
 <template>
   <div>
-    <h1>{{ msg }}</h1>
-    <navBar />
-    <sideBar />
-    <products />
+    <MainLayout />
   </div>
 </template>
 
 <script>
-import products from "./Products.vue";
-import navBar from "./NavBar.vue";
-import sideBar from "./SideBar.vue";
-
+import MainLayout from "../layout/MainLayout";
 export default {
   name: "UserView",
   components: {
-    products,
-    navBar,
-    sideBar,
+    MainLayout,
   },
   data() {
-    return {
-      msg: "Começando o app com TDD",
-    };
+    return {};
   },
 };
 </script>

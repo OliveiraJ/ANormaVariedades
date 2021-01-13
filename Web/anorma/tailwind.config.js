@@ -5,7 +5,8 @@ module.exports = {
     extend: {},
   },
   variants: {
+    outline: ["focus"],
     extend: {},
   },
-  plugins: [],
+  plugins: []
 }
