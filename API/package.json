@@ -1,0 +1,18 @@
+{
+  "name": "anorma-api",
+  "version": "1.0.0",
+  "description": "Api da aplicaçao de mostruario da empresa ANorma Variedades.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Api",
+    "JavaScript"
+  ],
+  "author": "Jordan Silva Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
