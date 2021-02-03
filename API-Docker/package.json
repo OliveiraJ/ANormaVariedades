@@ -1,13 +1,14 @@
 {
-  "name": "anorma-api",
+  "name": "api-docker",
   "version": "1.0.0",
-  "description": "Api da aplicaçao de mostruario da empresa ANorma Variedades.",
+  "description": "Api da aplicaçao de mostruario da Empresa ANorma Variedades",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/server.js"
+    "start": "nodemon index.js"
   },
   "keywords": [
+    "Docker",
     "Api",
     "JavaScript"
   ],
@@ -16,10 +17,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "mongoose": "^5.11.14",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.7"
   }
 }

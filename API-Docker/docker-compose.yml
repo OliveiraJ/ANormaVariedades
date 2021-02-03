@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  api:
+    build: .
+    command: npm start
+    ports: 
+      - "3000:3000"
+    volumes: 
+      - .:/usr/app
+  
+  postgresql:
+    image: postgres
+    environment: 
+      POSTGRES_PASSWORD: "j81073880"
+    ports: 
+      - "15432:5432"
+    volumes: 
+      - "/home/jordan/dev/anormavariedades/PostgreSQL:/var/lib/postgresql/data"
+    networks: 
+      - postgres-network
+  
+  pgadmin:
+    image: dpage/pgadmin4
+    environment: 
+      PGADMIN_DEFAULT_EMAIL: "jordansilva102@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "j81073880"
+    ports: 
+      - "16543:80"
+    depends_on: 
+      - postgresql
+    networks: 
+      - postgres-network
+
+networks: 
+  postgres-network:
+    driver: bridge
